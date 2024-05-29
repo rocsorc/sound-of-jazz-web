@@ -1,3 +1,63 @@
-.mynav {
-    background-color: #cb0000 !important;
-  }
+* {
+  margin: 0;
+  padding: 15px;
+}
+body {
+  background-color: #954535;
+}
+h1 {
+  text-align: center;
+}
+.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-size: 40px;
+  color: #eaddca;
+  font-weight: 400;
+  font-style: normal;
+}
+.boxes {
+  margin-top: 100px;
+}
+.box {
+  width: 30%;
+  margin: 0.5%;
+  min-height: 300px;
+  color: #521f1f;
+  float: left;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  background-color: #eaddca;
+  border-radius: 5px;
+  font-size: 17px;
+}
+nav ul {
+  width: 100%;
+  height: 10%;
+  float: inline-end;
+  list-style: none;
+  text-align: center;
+  background-color: #521f1f;
+}
+nav li {
+  display: inline-block;
+  position: relative;
+}
+nav a {
+  color: #eaddca;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 1px;
+  display: block;
+}
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.start:hover {
+  transform: translateY(-0.25em);
+  color: #f7dc6f;
+  background-color: #781f1f;
+  border: 1px solid #f7dc6f;
+}
