@@ -7,6 +7,9 @@
   -nmw
   */
 }
+.maille-padding {
+  padding:15px;
+}
 
 body {
   background-color: #954535;
