@@ -36,34 +36,33 @@
       </div>
     </header>
 
-    <main>
-      <!-- page content -->
+    <main> <!-- page content -->
       <div id="content"></div>
     </main>
 
     <script>
-      // using web-scraped data from earshot.org
-      // defining the JSON file | this file is being hosted on my personal server -nmw
-      const eventJsonData = "FinalData12.JSON";
+        // using web-scraped data from earshot.org
+        // defining the JSON file | this file is being hosted on my personal server -nmw
+        const eventJsonData = 'https://rocsorc.net/wwu/csci202/final/test/FinalData13.json';
 
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch(eventJsonData)
-          .then((response) => response.json())
-          .then((data) => {
-            //#content for placing all data. div is in <main>
-            const content = document.getElementById("content");
-            data.forEach((item) => {
-              //<section> for each set of data
-              const section = document.createElement("section");
-              section.innerHTML = `
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch(eventJsonData)
+                .then(response => response.json())
+                .then(data => {
+                    //#content for placing all data. div is in <main>
+                    const content = document.getElementById('content');
+                    data.forEach(item => {
+                        //<section> for each set of data
+                        const section = document.createElement('section');
+                        section.innerHTML = `
                         <h2>${item.eventName}</h2>
-                        <h3>${item.eventLocation}, ${item.eventDate}</h3>
+                        <h4>${item.eventLocation}, ${item.eventDate}</h4>
                         `;
-              content.appendChild(section);
-            });
-          })
-          .catch((error) => console.error("Erorr loading the data:", error));
-      });
+                        content.appendChild(section);
+                    });
+                })
+                .catch(error =>console.error('Erorr loading the data:', error));
+        });
     </script>
   </body>
 </html>
