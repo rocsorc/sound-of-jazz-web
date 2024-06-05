@@ -32,10 +32,16 @@ h1 {
   see below for @import ... (max-width:800?px) {flex-direction:column;}
   -nmw
   */
-  margin-top: 100px;
+  margin-top: 100px; /* separation on events.html page */
   height: auto;
 }
-/* individual flex */
+/* cards on index.html */
+.boxes-index {
+    display: flex;
+  flex-direction: row; 
+  height: auto;
+}
+/* individual flex. this .box is for list on events.html*/
 .box {
   display:block;
   width: 30%;
@@ -49,6 +55,7 @@ h1 {
   border-radius: 5px;
   font-size: 17px;
 }
+
 
 /* NAVIGATION */
 /* ul is for stacking <a>'s */
