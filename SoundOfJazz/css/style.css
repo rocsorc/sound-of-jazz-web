@@ -1,16 +1,12 @@
 * {
   margin: 0;
-  padding: 0px; 
-  /* 
-  I am making the universal selector have true "reset css" properties, for debug purposes.
-  before: padding: 15px;
-  -nmw
-  */
+  padding: 15px; 
 }
+/*
 .maille-padding {
   padding:15px;
 }
-
+*/
 body {
   background-color: #954535;
 }
@@ -85,12 +81,12 @@ nav {
   font-style: normal;
 }
 .start:hover { /* the .start class is being used in the nav ul */
-  transform: translateY(-0.25em); /* cool popping effect, thanks maille! -nmw */
+  transform: translateY(-0.25em);
   color: #f7dc6f;
   background-color: #781f1f;
   border: 1px solid #f7dc6f;
 }
-.ear { /* I can't what this is for. it doesn't matter much, I'd just like to know what to label it! -nmw */
+.ear {
   padding: 0;
 }
 
